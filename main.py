@@ -82,13 +82,13 @@ def calculate_score(answers):
 
 def get_result_message(score, total):
     if score >= 20:
-        return "Отлично"
+        return "Лучший"
     elif score >= 16:
         return "Хорошо"
     elif score >= 14:
-        return "Удовлетворительно"
+        return "Плохо"
     else:
-        return "Требуется немедленное исправление"
+        return "Чмошный"
 
 def main():
     @bot.message_handler(commands=['start'])
